@@ -1,0 +1,27 @@
+//docker의 기본 개념
+도커 -> 리눅스 운영체제에서 동작
+리눅스 운영체제가 아닌 경우 -> 가상머신 안에 리눅스 운영체제를 동작 (도커가 알아서 해줌)
+
+ -docker hub: 소프트웨어 찾기
+ -image: 컴퓨터에 다운로드 (pull)
+ -container: image 실행 (run)
+
+
+// docker 실습 순서
+1. docker desktop download (docs.docker.com)
+2. docker image pull (hub.docker.com)
+3. docker image run -> container 생성: oss
+
+
+//docker 명령어 -> cmd(windows)
+docker pull [name] : docker image pull
+docker images : 컴퓨터에 잘 설치되었는지 확인.
+docker run httpd : httpd 기반으로 container가 만들어지고 실행됨.
+docker ps : 실행 중인 container 목록 확인.
+docker ps -a : container 목록 확인.
+docker run --name oss2 httpd : httpd 기반으로 oss2라는 이름의 container 생성.
+docker start [name] : 실행 중지된 container를 실행.
+docker stop [name] : 실행중인 container를 끔.
+docker rm [name] : 실행이 중지된 container를 삭제.
+docker rmi : image 삭제.
+
